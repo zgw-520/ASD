@@ -18,8 +18,8 @@
 ## 安装指南
 1. 克隆该仓库：
    ```bash
-   git clone https://github.com/zgw-520/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/zgw-520/Facial expression recognition.git
+   cd Facial expression recognition
 使用方法
 确保你的摄像头已连接。
 运行 main.py 文件：
