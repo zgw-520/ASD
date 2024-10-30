@@ -18,8 +18,11 @@
 ## 安装指南
 1. 克隆该仓库：
    ```bash
-   git clone https://github.com/zgw-520/Facial expression recognition.git
-   cd Facial expression recognition
+   git clone https://github.com/zgw-520/Facial_expression_recognition.git
+   cd Facial_expression_recognition
+2.安装依赖：
+```bash
+pip install -r requirements.txt
 使用方法
 确保你的摄像头已连接。
 运行 main.py 文件：
@@ -28,18 +31,18 @@ bash
 python main.py
 程序运行后，将打开一个窗口，显示实时的视频流和检测到的表情标签。
 按 q 键退出程序。
-项目结构
-bash
-复制代码
+## 项目结构
+```bash
+
 data/
-    fer2013.csv          # 数据集
+    fer2013.csv                      # 数据集
 models/
-    facial_expression_model.pth  # 训练好的模型
+    facial_expression_model.pth       # 训练好的模型
     haarcascade_frontalface_default.xml  # Haar Cascade 分类器文件
-__init__.py                # 包的初始化文件
-main.py                    # 主程序
-predict.py                 # 预测脚本
-训练模型（可选）
+__init__.py                          # 包的初始化文件
+main.py                               # 主程序
+predict.py                            # 预测脚本
+## 训练模型（可选）
 如果你希望自己训练模型，可以使用以下步骤：
 
 准备数据集并将其放置在 data/fer2013.csv 中。
