@@ -22,21 +22,26 @@ markdown
    ```bash
    git clone https://github.com/zgw-520/Facial_expression_recognition.git
    cd Facial_expression_recognition
-安装依赖：
-bash
-复制代码
-pip install -r requirements.txt
-使用方法
-确保你的摄像头已连接。
+2. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+
+## 使用方法
+如果你希望自己训练模型，可以使用以下步骤：
+
+准备数据集并将其放置在 data/fer2013.csv 中。
+编写数据加载和模型训练代码（请参考相关 PyTorch 文档）。
+保存训练好的模型到 models/facial_expression_model.pth。
 运行 main.py 文件：
-bash
-复制代码
-python main.py
+ 	```bash
+	python main.py
+训练好模型后
+然后使用模型来做面部表情判断
+确保你的摄像头已连接。
 程序运行后，将打开一个窗口，显示实时的视频流和检测到的表情标签。
 按 q 键退出程序。
-项目结构
-bash
-复制代码
+## 项目结构
+ ```bash
 data/
     fer2013.csv                      # 数据集
 models/
@@ -45,14 +50,8 @@ models/
 __init__.py                          # 包的初始化文件
 main.py                               # 主程序
 predict.py                            # 预测脚本
-训练模型（可选）
-如果你希望自己训练模型，可以使用以下步骤：
-
-准备数据集并将其放置在 data/fer2013.csv 中。
-编写数据加载和模型训练代码（请参考相关 PyTorch 文档）。
-保存训练好的模型到 models/facial_expression_model.pth。
-示例结果
-可以通过运行程序观察实时的人脸表情识别结果。以下是一个示例截图（如果有的话，可以在此添加截图）。
+## 示例结果
+可以通过运行程序观察实时的人脸表情识别结果。以下是一个示例截图。
 
 贡献
 欢迎任何形式的贡献！如果你发现任何问题或有改进建议，请创建一个 issue 或提交 pull request。
