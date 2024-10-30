@@ -36,6 +36,7 @@ markdown
  	```bash
 	python main.py
 训练好模型后
+使用predict.py文件，做表情识别
 然后使用模型来做面部表情判断
 确保你的摄像头已连接。
 程序运行后，将打开一个窗口，显示实时的视频流和检测到的表情标签。
@@ -50,13 +51,22 @@ models/
 __init__.py                          # 包的初始化文件
 main.py                               # 主程序
 predict.py                            # 预测脚本
+ ```
 ## 示例结果
-可以通过运行程序观察实时的人脸表情识别结果。以下是一个示例截图。
+可以通过运行程序观察实时的人脸表情识别结果。以下是几个示例截图。
 
-贡献
+
+![image](https://github.com/user-attachments/assets/ef227b13-7315-4634-b4ff-20c1e07f6452)
+
+![image](https://github.com/user-attachments/assets/03743859-1ea9-4ba0-9a7a-1835c310439a)
+
+![image](https://github.com/user-attachments/assets/6b61c93d-3050-4b3c-b652-7f52285a47c4)
+
+
+## 贡献
 欢迎任何形式的贡献！如果你发现任何问题或有改进建议，请创建一个 issue 或提交 pull request。
 
-联系信息
+## 联系信息
 如有问题或建议，请联系：
 
 姓名：zgw-520
